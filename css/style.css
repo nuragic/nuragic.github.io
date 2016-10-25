@@ -1,0 +1,134 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+::-moz-selection { }
+::selection { }
+
+a { color: #00e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; }
+
+body, p, h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color:#333;
+  background:url("brilliant.png") 0 0 transparent repeat;
+}
+
+.wrapper {
+  width: 460px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width : 460px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+section {
+  margin: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+  line-height: 100%;
+  text-decoration: none;
+  text-transform: none;
+}
+
+h1,h2 {
+  color: #000;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 30px;
+  color: #FF3333;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a:active,
+a:focus {
+  position: relative;
+  left: 1px;
+}
+
+#links a {
+  color: #499ef1; //DodgerBlue;
+  font-weight: bold;
+  margin-right: 15px;
+}
+#links a:after {
+  content: "\00A0\000BB";
+}
+
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.help {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+.experience p {
+  margin-top:5px;
+}
+.experience p:last-child {
+  margin-bottom:20px;
+}
+.experience i {
+  background: #e6fb92;
+  box-shadow: #000 5px 5px 5px -5px;
+  padding: 0px 2px;
+  border-radius: 3px;
+  font-style: normal;
+  font-size: 95%;
+}
+
+.skillset li {
+  display: inline;
+  font-size: 12px;
+  font-style: italic;
+}
+.skillset li:after {
+    content: " * ";
+    font-weight: bold;
+}
