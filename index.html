@@ -9,8 +9,21 @@
     <title>Andrea Puddu - Front-end developer, Web Engineer</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,700,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script id="tmpl-experience" type="text/x-handlebars-template">
+    {{#each experience}}
+      <li>
+        <strong>{{this.company}}</strong>
+        <em class="help" title="{{this.period.start}} - {{this.period.end}}">{{this.period.duration}}</em> - {{this.period.location}}
+        <p>{{{this.description}}}</p>
+      </li>
+    {{/each}}
+    </script>
+    <script id="tmpl-skillset" type="text/x-handlebars-template">
+    {{#each skillset}}
+      <li>{{this}}</li>
+    {{/each}}
+    </script>
     <script>
       var experience = [
         {
@@ -125,34 +138,43 @@
         }
       ];
       
-      var template = Handlebars.compile($("#tmpl-experience").html());
-      
-      $('#experience').find('ul').html(template({'experience' : experience }));
+      var $ = document.querySelector.bind(document);
 
-      $.get("https://gist.githubusercontent.com/nuragic/7bece2b662a7d98f6b15e3b36143f811/raw/0021810fe00503653d10eee06c986e0152aa5865/skillset", function(data) {
-        var skillset = data.split("\n");
-        var template = Handlebars.compile($("#tmpl-skillset").html());
-        $('#skillset').find('ul').html(template({skillset: skillset}));
-      });
+      function render(src, data, dest) {
+        var source = $(src).innerHTML;
+        var template = Handlebars.compile(source);
+        var html = template(data);
+        $(dest).innerHTML = html;
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+
+        render('#tmpl-experience', {experience: experience}, '.experience');
+
+        var data = '';
+        var skillsetURL = 'https://gist.githubusercontent.com/nuragic/7bece2b662a7d98f6b15e3b36143f811/raw/0021810fe00503653d10eee06c986e0152aa5865/skillset';
+
+        fetch(skillsetURL)
+        .then(function(response) {
+          var reader = response.body.getReader();
+          return reader.read();
+        })
+        .then(function(result) {
+          var decoder = new TextDecoder();
+
+          data += decoder.decode(result.value || new Uint8Array, {
+            stream: !result.done
+          });
+
+          var skillset = data.split('\n');
+
+          render('#tmpl-skillset', {skillset: skillset}, '.skillset');
+        });
+
+      }, false);
     </script>
   </head>
   <body class="text-center">
-    
-    <script id="tmpl-experience" type="text/x-handlebars-template">
-    {{#each experience}}
-      <li>
-        <strong>{{this.company}}</strong>
-        <em class="help" title="{{this.period.start}} - {{this.period.end}}">{{this.period.duration}}</em> - {{this.period.location}}
-        <p>{{{this.description}}}</p>
-      </li>
-    {{/each}}
-    </script>
-    <script id="tmpl-skillset" type="text/x-handlebars-template">
-    {{#each skillset}}
-      <li>{{this}}</li>
-    {{/each}}
-    </script>
-
     <div class="wrapper">
       <section id="personal-info">
         <header>
