@@ -9,14 +9,125 @@
     <title>Andrea Puddu - Front-end developer, Web Engineer</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,700,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/libs/modernizr.custom.js"></script>
-    <script src="js/libs/jquery-1.9.1.min.js"></script>
-    <script src="js/libs/handlebars.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script>
-      $.getJSON("data/experience.json", function(data) {
-        var template = Handlebars.compile($("#tmpl-experience").html());
-        $('#experience').find('ul').html(template({'experience' : data }));
-      });
+      var experience = [
+        {
+          "position":"Senior Front-end Developer",
+          "company":"NEORIS",
+          "period":{
+            "start":"August 2015",
+            "end":"Present",
+            "duration":"(1 year, 3 months)",
+            "location":"Madrid"
+          },
+          "description":"Crafting front-end architectures for large scale web applications using <i>ES6</i>, <i>Angular</i>, <i>React</i>, <i>Redux</i>, <i>WebPack</i>, <i>NodeJS</i>, <i>Git</i>, etc. When needed, I play the role of agile coach, scrum master and technical lead of the development team."
+        },
+        {
+          "position":"Front-end Lead Engineer",
+          "company":"Critizen",
+          "period":{
+            "start":"May 2015",
+            "end":"July 2015",
+            "duration":"(3 months)",
+            "location":"Madrid"
+          },
+          "description":"Building the new front-end web architecture from scratch using the last cutting-edge technologies and techniques such as <i>ES6</i>, <i>React</i>, <i>WebPack</i>, <i>NodeJS</i>, <i>Isomorphic/Universal JavaScript</i> and <i>Flux</i>."
+        },
+        {
+          "position":"Front-end developer",
+          "company":"BABEL",
+          "period":{
+            "start":"February 2014",
+            "end":"April 2015",
+            "duration":"(1 year, 3 months)",
+            "location":"Madrid"
+          },
+          "description":"Enhancing performance and architecture of the brand new multi-device banking platform for <strong>ING Direct Spain</strong>. <i>HTML5</i>, <i>CSS3</i> (<i>Stylus</i>, <i>RWD</i>), <i>JavaScript</i> (<i>Backbone</i>, <i>Marionette</i>, <i>RequireJS</i>, <i>NodeJS</i>, <i>Grunt</i>)."
+        },
+        {
+          "position":"Front-end developer",
+          "company":"ADESIS Netlife",
+          "period":{
+            "start":"September 2013",
+            "end":"January 2014",
+            "duration":"(5 months)",
+            "location":"Madrid"
+          },
+          "description":"Web apps development with <i>HTML5</i>, <i>CSS3</i> (<i>Compass</i>, <i>Responsive Web Design</i>), <i>JavaScript</i> (<i>AngularJS</i>, <i>NodeJS,</i> <i>Yeoman</i>, <i>Grunt</i>), <i>Git</i> and more."
+        },
+        {
+          "position":"Front-end developer",
+          "company":"Tutellus",
+          "period":{
+            "start":"May 2013",
+            "end":"August 2013",
+            "duration":"(4 months)",
+            "location":"Madrid"
+          },
+          "description":"Boosting User Interface to the next level with <i>HTML5</i>, <i>CSS3</i> and <i>JavaScript</i> (<i>Backbone</i>, <i>Marionette</i>, <i>RequireJS</i>, <i>jQuery</i>, <i>NodeJS</i>)"
+        },
+        {
+          "position":"Front-end developer",
+          "company":"AURIGAE",
+          "period":{
+            "start":"January 2013",
+            "end":"April 2013",
+            "duration":"(4 months)",
+            "location":"Madrid"
+          },
+          "description":"Developing cross-platform web applications with <i>HTML5</i>. The <i>JavaScript</i> stack includes <i>Backbone</i>, <i>Marionette</i>, <i>jQuery</i>, <i>jQuery Mobile</i>, <i>underscore</i>, <i>RequireJS</i>, <i>PhoneGap</i>, etc."
+        },
+        {
+          "position":"Front-end Team Leader",
+          "company":"Media Net Software",
+          "period":{
+            "start":"February 2012",
+            "end":"January 2013",
+            "duration":"(1 year)",
+            "location":"Madrid"
+          },
+          "description":"Working on the new website of <strong>BBVA bank</strong> (launched on April, 2013). Writing <i>HTML5</i>, <i>CSS3</i> (<i>SASS</i>), modular <i>JavaScript</i> APIs (<i>Backbone</i>, <i>underscore</i>, <i>jQuery</i> &amp; more)."
+        },
+        {
+          "position":"Web developer",
+          "company":"Ticketea",
+          "period":{
+            "start":"July 2010",
+            "end":"January 2012",
+            "duration":"(1 year 7 months)",
+            "location":"Madrid"
+          },
+          "description":"Building the product from scratch using <i>SCRUM</i>, <i>TDD</i>, <i>LAMP</i>, <i>JavaScript</i> (<i>jQuery</i>), <i>XHTML</i>, <i>CSS</i>, <i>Git</i>. Integrations with affiliates, <i>Google and Facebook APIs</i>."
+        },
+        {
+          "position":"Web developer",
+          "company":"Comunica+A",
+          "period":{
+            "start":"May 2009",
+            "end":"June 2010",
+            "duration":"(1 year 2 months)",
+            "location":"Madrid"
+          },
+          "description":"Websites for clients such as Orange, Endesa, MRW, McDonalds, Wilkinson, Alfa Romeo, Lancia, Real Madrid FC, entradas.com, Mutua Madrile&#xf1;a, la Caixa, red.es, AECEM, etc. <i>LAMP</i>, <i>XHTML</i>, <i>CSS</i>, <i>JavaScript</i>."
+        },
+        {
+          "position":"Web developer",
+          "company":"Arionline s.r.l.",
+          "period":{
+            "start":"2007",
+            "end":"2009",
+            "duration":"(2 years)",
+            "location":"Cagliari Area, Italy"
+          },
+          "description":"Software programming, R&amp;D projects, web apps, with <i>Open Source</i> technology: <i>PHP</i> (<i>Joomla</i>), <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i> (<i>jQuery</i>)."
+        }
+      ];
+      
+      var template = Handlebars.compile($("#tmpl-experience").html());
+      
+      $('#experience').find('ul').html(template({'experience' : experience }));
 
       $.get("https://gist.githubusercontent.com/nuragic/7bece2b662a7d98f6b15e3b36143f811/raw/0021810fe00503653d10eee06c986e0152aa5865/skillset", function(data) {
         var skillset = data.split("\n");

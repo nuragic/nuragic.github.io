@@ -16,5 +16,9 @@
     "scripts": {
       "pre-push": "surge --project ./ --domain nuragic.io"
     }
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jquery": "^3.1.1"
   }
 }
