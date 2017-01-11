@@ -25,6 +25,25 @@
     {{/each}}
     </script>
     <script>
+      // get/improve/comment this function @ https://gist.github.com/nuragic/ff9ee6212a6d335627e1fd17a81e8991
+      const getDuration = (start) => {
+        const totalMonths = Math.floor((new Date() - new Date(start)) / 1000 / 60 / 60 / 24 / 30);
+        const months = totalMonths < 12 ? totalMonths : totalMonths % 12;
+        const years = Math.floor(totalMonths / 12);
+        let duration = '';
+
+        if (years === 0)
+          if (months > 0)
+            duration = `${months} months`;
+        if (years > 0)
+          if (months === 0)
+            duration = `${years} years`;
+          else
+            duration = `${years} years, ${months} months`;
+
+        return `(${duration})`;
+      };
+
       var experience = [
         {
           "position":"Senior Front-end Developer",
@@ -32,7 +51,9 @@
           "period":{
             "start":"August 2015",
             "end":"Present",
-            "duration":"(1 year, 3 months)",
+            get duration() {
+              return getDuration(this.start);
+            },
             "location":"Madrid"
           },
           "description":"Crafting front-end architectures for large scale web applications using <i>ES6</i>, <i>Angular</i>, <i>React</i>, <i>Redux</i>, <i>WebPack</i>, <i>NodeJS</i>, <i>Git</i>, etc. When needed, I play the role of agile coach, scrum master and technical lead of the development team."
