@@ -1,2 +1,3 @@
-# www.nuragic.io
-My personal website: www.nuragic.io
+# nuragic.io
+
+Source code for my GitHub page i.e. personal website: http://nuragic.io/
