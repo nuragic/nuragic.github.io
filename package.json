@@ -1,24 +1,26 @@
 {
   "name": "nuragic.io",
-  "version": "1.0.0",
-  "description": "nuragic.io website",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "2.0.0",
+  "description": "Source code for my personal page.",
   "author": "Andrea Puddu <me@nuragic.io>",
   "license": "UNLICENSED",
-  "devDependencies": {
-    "git-scripts": "^0.2.1",
-    "surge": "^0.18.0"
+  "main": "dist/index.html",
+  "scripts": {
+    "start": "parcel -p 8080 ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "deploy": "gh-pages -b master -d dist"
   },
-  "git": {
-    "scripts": {
-      "pre-push": "surge --project ./ --domain nuragic.io"
+  "husky": {
+    "hooks": {
+      "pre-push": "rm -rf dist && yarn build && yarn deploy"
     }
   },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "husky": "^1.1.2",
+    "parcel-bundler": "^1.10.3"
+  },
   "dependencies": {
-    "handlebars": "^4.0.5",
-    "whatwg-fetch": "^1.0.0"
+    "hyperhtml": "^2.15.2"
   }
 }
