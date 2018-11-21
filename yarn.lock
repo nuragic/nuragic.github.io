@@ -2125,8 +2125,8 @@ husky@^1.1.2:
     slash "^2.0.0"
 
 hyperhtml@^2.15.2:
-  version "2.15.2"
-  resolved "https://registry.yarnpkg.com/hyperhtml/-/hyperhtml-2.15.2.tgz#32f9ceb0d22ac9028fb2331927d74a8eac86041d"
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/hyperhtml/-/hyperhtml-2.17.1.tgz#dcf11c602b996e95f187425b01aaee1fbd2a09f2"
   dependencies:
     lightercollective "^0.1.0"
 
