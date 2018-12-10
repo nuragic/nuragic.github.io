@@ -577,6 +577,42 @@
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-5.5.0.tgz#146c2a29ee7d3bae4bf2fcb274636e264c813c45"
 
+"@ungap/create-content@^0.1.1":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@ungap/create-content/-/create-content-0.1.3.tgz#2c760532c0bc95115c27ff038f765d49105f0f73"
+
+"@ungap/custom-event@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@ungap/custom-event/-/custom-event-0.1.2.tgz#b2255e8dd5a96c5028b90d9c08ecec17d8cc5a65"
+
+"@ungap/essential-map@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@ungap/essential-map/-/essential-map-0.1.7.tgz#466b181c299f825b1d853901ee88f3ce302b7c71"
+
+"@ungap/essential-weakset@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@ungap/essential-weakset/-/essential-weakset-0.1.2.tgz#0d26af948306db5034659df911268ebfbea5e2b8"
+
+"@ungap/import-node@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@ungap/import-node/-/import-node-0.1.0.tgz#9ad7d3af37c2454504b2bd0b63580063c297d5f1"
+
+"@ungap/is-array@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@ungap/is-array/-/is-array-0.1.1.tgz#0169cc0bbd6b8ac21e924dbbe1965da2c6850d23"
+
+"@ungap/template-literal@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@ungap/template-literal/-/template-literal-0.1.0.tgz#cfac1f01f4943527e05264e49d4a4b3549a3307f"
+
+"@ungap/trim@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@ungap/trim/-/trim-0.1.1.tgz#f956174af66689e64156ee0725f4a040f4b5a098"
+
+"@ungap/weakmap@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@ungap/weakmap/-/weakmap-0.1.4.tgz#7ca55d2cab02639686b2c90e58cf161b8a3c482d"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -1524,6 +1560,10 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
+disconnected@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/disconnected/-/disconnected-0.1.6.tgz#8c964f5582e5b5b2162b1a37affbdf3554234b9d"
+
 dom-serializer@0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
@@ -1534,6 +1574,12 @@ dom-serializer@0:
 domain-browser@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
+
+domdiff@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/domdiff/-/domdiff-2.0.2.tgz#c63535384d8d1f5954d36049a9d6a770d8a50dcb"
+  dependencies:
+    "@ungap/essential-map" "^0.1.7"
 
 domelementtype@1:
   version "1.2.1"
@@ -1552,6 +1598,16 @@ domhandler@^2.3.0:
   resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-2.4.2.tgz#8805097e933d65e85546f726d60f5eb88b44f803"
   dependencies:
     domelementtype "1"
+
+domtagger@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/domtagger/-/domtagger-0.1.5.tgz#317a827b199e8e6f291d56c25478217648f13b85"
+  dependencies:
+    "@ungap/create-content" "^0.1.1"
+    "@ungap/essential-map" "^0.1.7"
+    "@ungap/import-node" "^0.1.0"
+    "@ungap/trim" "^0.1.1"
+    "@ungap/weakmap" "^0.1.4"
 
 domutils@^1.5.1, domutils@^1.7.0:
   version "1.7.0"
@@ -2124,10 +2180,26 @@ husky@^1.1.2:
     run-node "^1.0.0"
     slash "^2.0.0"
 
+hyperhtml-style@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/hyperhtml-style/-/hyperhtml-style-0.1.2.tgz#c7a7904656a95575d5afdd06ac96bb4d757e0197"
+
 hyperhtml@^2.15.2:
-  version "2.15.2"
-  resolved "https://registry.yarnpkg.com/hyperhtml/-/hyperhtml-2.15.2.tgz#32f9ceb0d22ac9028fb2331927d74a8eac86041d"
+  version "2.20.2"
+  resolved "https://registry.yarnpkg.com/hyperhtml/-/hyperhtml-2.20.2.tgz#a1361291470401dda123a06ef97cc1d010bd9b74"
   dependencies:
+    "@ungap/create-content" "^0.1.1"
+    "@ungap/custom-event" "^0.1.2"
+    "@ungap/essential-map" "^0.1.7"
+    "@ungap/essential-weakset" "^0.1.2"
+    "@ungap/is-array" "^0.1.1"
+    "@ungap/template-literal" "^0.1.0"
+    "@ungap/trim" "^0.1.1"
+    "@ungap/weakmap" "^0.1.4"
+    disconnected "^0.1.6"
+    domdiff "^2.0.2"
+    domtagger "^0.1.5"
+    hyperhtml-style "^0.1.2"
     lightercollective "^0.1.0"
 
 iconv-lite@^0.4.4:
