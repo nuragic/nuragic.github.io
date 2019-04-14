@@ -144,7 +144,7 @@ const experience = [
 ];
 
 const data = {
-  header: `<p>Spaghetti code hater, lasagna eater, <i>rock and roll</i> driven <strong>web developer</strong>. Born and raised in <i>Sardinia</i>.</p><p>🇮🇹⛱☀️🐑🦀🍷🍝</p>`,
+  header: `<p>Spaghetti code hater, lasagna eater, <i>rock and roll</i> driven <strong>web developer</strong>. Born and raised in <i>Sardinia</i>.</p>`,
   experience,
   skillsetURL: 'https://gist.githubusercontent.com/nuragic/7bece2b662a7d98f6b15e3b36143f811/raw',
   languages: [

@@ -111,6 +111,9 @@ ul {
   font-style: normal;
   font-size: 95%;
 }
+.experience li {
+  padding-bottom: 15px;
+}
 .duration {
   cursor: help;
   border-bottom: 1px dotted;

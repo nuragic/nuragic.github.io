@@ -1,5 +1,5 @@
 import hyperHTML from 'hyperhtml';
-import avatar from './css/avatar.jpg';
+import avatar from './img/avatar.jpg';
 
 export function Page(data) {
   const { header, experience, languages, links, skillsetURL } = data;
