@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "husky": "^1.1.2",
+    "husky": "^2.3.0",
     "parcel-bundler": "^1.10.3"
   },
   "dependencies": {
