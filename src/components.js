@@ -1,5 +1,4 @@
-import hyperHTML from 'hyperhtml';
-import avatar from './img/avatar.jpg';
+import hyperHTML from './web_modules/hyperhtml.js';
 
 export function Page(data) {
   const { header, experience, languages, links, skillsetURL } = data;
@@ -19,7 +18,7 @@ function Header(head) {
     <section id="personal-info">
       <header>
         <div class="avatar">
-          <img src="${avatar}" alt="Andrea Puddu">
+          <img src="./img/avatar.jpg" alt="Andrea Puddu">
         </div>
       </header>
       <div class="head">

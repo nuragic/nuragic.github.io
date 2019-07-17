@@ -1,4 +1,4 @@
-import hyperHTML from 'hyperhtml';
+import hyperHTML from './web_modules/hyperhtml.js';
 import { Page } from './components.js';
 import data from './data.js';
 

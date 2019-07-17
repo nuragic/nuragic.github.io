@@ -3,24 +3,20 @@
   "version": "2.0.0",
   "description": "Source code for my personal page.",
   "author": "Andrea Puddu <me@nuragic.io>",
-  "license": "UNLICENSED",
-  "main": "dist/index.html",
+  "license": "cc-by-sa-4.0",
+  "main": "src/index.html",
   "scripts": {
-    "start": "parcel -p 8080 ./src/index.html",
-    "build": "parcel build ./src/index.html",
-    "deploy": "gh-pages -b master -d dist"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "rm -rf dist && yarn build && yarn deploy"
-    }
+    "certgen": "mkcert -cert-file ./certs/cert.pem -key-file ./certs/key.pem $*",
+    "certinstall": "CAROOT=./certs/CAROOT mkcert -install",
+    "firstinstall": "yarn certgen nuragic.local localhost 127.0.0.1 ::1 && yarn certinstall",
+    "prepare": "pika-web --dest src/web_modules/ --optimize --clean --strict",
+    "start": "http2server start --watch"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "husky": "^1.1.2",
-    "parcel-bundler": "^1.10.3"
+    "@http2/server": "^5.2.0",
+    "@pika/web": "^0.4.3"
   },
   "dependencies": {
-    "hyperhtml": "^2.15.2"
+    "hyperhtml": "^2.29.4"
   }
 }

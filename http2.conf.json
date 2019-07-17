@@ -1,0 +1,18 @@
+{
+  "https": {
+    "cert": "./certs/cert.pem",
+    "key": "./certs/key.pem"
+  },
+  "hosts": [
+    {
+      "domain": "localhost",
+      "root": "./src",
+      "manifest": [
+        {
+          "get": "**/*.html",
+          "push": ["**/*.css", "**/*.js"]
+        }
+      ]
+    }
+  ]
+}
