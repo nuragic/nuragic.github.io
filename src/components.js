@@ -1,4 +1,4 @@
-import hyperHTML from './web_modules/hyperhtml.js';
+import hyperHTML from '../web_modules/hyperhtml.js';
 
 export function Page(data) {
   const { header, experience, languages, links, skillsetURL } = data;
