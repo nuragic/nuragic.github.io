@@ -4,12 +4,12 @@
   "description": "Source code for my personal page.",
   "author": "Andrea Puddu <me@nuragic.io>",
   "license": "cc-by-sa-4.0",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
     "certgen": "mkcert -cert-file ./certs/cert.pem -key-file ./certs/key.pem $*",
     "certinstall": "CAROOT=./certs/CAROOT mkcert -install",
     "firstinstall": "yarn certgen nuragic.local localhost 127.0.0.1 ::1 && yarn certinstall",
-    "prepare": "pika-web --dest src/web_modules/ --optimize --clean --strict",
+    "prepare": "pika-web --optimize --clean --strict",
     "start": "http2server start --watch"
   },
   "devDependencies": {
