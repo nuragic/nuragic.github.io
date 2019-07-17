@@ -18,7 +18,7 @@ function Header(head) {
     <section id="personal-info">
       <header>
         <div class="avatar">
-          <img src="img/avatar.jpg" alt="Andrea Puddu">
+          <img src="img/andrea.jpg" alt="Andrea Puddu">
         </div>
       </header>
       <div class="head">
