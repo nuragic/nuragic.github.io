@@ -81,9 +81,9 @@
     yargs "^11.0.0"
 
 "@pika/web@^0.4.3":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@pika/web/-/web-0.4.3.tgz#cf589ac00bc7e5b7d647fe3d4817453fa3763ad8"
-  integrity sha512-WcRhCKwAHoVMzHeLuwGvaAnzmrhgyCs7977vZVG9lZHB3k9unq1vyxv7Mb3a4yNZTmwx13Bf4bu2KOCQbvDVig==
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@pika/web/-/web-0.4.4.tgz#927926e002e0d2e84645ff8865dd5a86dad6c2f0"
+  integrity sha512-Z2DtjisQmYN5hCyjri6xmcqzPN6WwFsKwrP4RS0/35EkdnBJ9jryXxGHXGv9LdCihRtTdcs/2Cm0i/D03JM7bA==
   dependencies:
     chalk "^2.4.2"
     is-builtin-module "^3.0.0"
