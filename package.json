@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@http2/server": "^5.2.0",
-    "@pika/web": "^0.4.3"
+    "@pika/web": "^0.5.3"
   },
   "dependencies": {
     "hyperhtml": "^2.29.4"
