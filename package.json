@@ -10,13 +10,14 @@
     "certinstall": "CAROOT=./certs/CAROOT mkcert -install",
     "firstinstall": "yarn certgen nuragic.local localhost 127.0.0.1 ::1 && yarn certinstall",
     "prepare": "pika-web --optimize --clean --strict",
-    "start": "http2server start --watch"
+    "start": "server start --watch"
   },
   "devDependencies": {
-    "@http2/server": "^5.2.0",
-    "@pika/web": "^0.4.3"
+    "@commonshost/server": "^6.10.3",
+    "@pika/web": "^0.6.1",
+    "node-fetch": "^2.6.0"
   },
   "dependencies": {
-    "hyperhtml": "^2.29.4"
+    "hyperhtml": "^2.31.0"
   }
 }

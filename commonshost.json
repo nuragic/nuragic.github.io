@@ -1,12 +1,10 @@
 {
-  "https": {
-    "cert": "./certs/cert.pem",
-    "key": "./certs/key.pem"
+  "tls": {
+    "certPath": "./certs/cert.pem",
+    "keyPath": "./certs/key.pem"
   },
   "hosts": [
     {
-      "domain": "localhost",
-      "root": "./src",
       "manifest": [
         {
           "get": "**/*.html",
