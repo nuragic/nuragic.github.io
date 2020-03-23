@@ -124,10 +124,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/custom-event/-/custom-event-0.2.0.tgz#0d200735806ba13f2cf1e8f8522b2a812e08947e"
   integrity sha512-jovJx+4IaAL8JAzepJXDBVlS9t9mR3vKbbjcHwHCF+sN0KKCYQ2pNVAlQYiRrPqeNBl5VXU7uUDOKBg9ODB+0Q==
 
-"@ungap/essential-map@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@ungap/essential-map/-/essential-map-0.1.7.tgz#466b181c299f825b1d853901ee88f3ce302b7c71"
-  integrity sha512-zkugZ6xxu0tHHTOfoce5B7ax2anIRP7hGIwKh5MEWH5mWPNXLigxEubkKv5WLUsFELCdKaMfjdqfI0H0/tLhpw==
+"@ungap/essential-map@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@ungap/essential-map/-/essential-map-0.2.0.tgz#c8721ac3512331c9b80382be99fff1b04eedba1d"
+  integrity sha512-PM7rUPhH2IAeDZXGjMi1KwNVW/4b/wxfzlPkZSXacHA5A98n+PdCou+HD2EaeXlO8pY5Tp81Ysg+J2xB7J/mjw==
 
 "@ungap/essential-weakset@^0.1.2":
   version "0.1.2"
@@ -144,19 +144,19 @@
   resolved "https://registry.yarnpkg.com/@ungap/is-array/-/is-array-0.1.1.tgz#0169cc0bbd6b8ac21e924dbbe1965da2c6850d23"
   integrity sha512-867tkp7LhJsOS3iULhhCluRV69bwyRQgBEwZSkm6VnZs8LFVD6VWFugiWc7Zgxwx4Psbrrou15u57n8YNIbKAQ==
 
-"@ungap/template-literal@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@ungap/template-literal/-/template-literal-0.4.0.tgz#bd97e1d20dc3059a026369f59e00f0d205b2351b"
-  integrity sha512-EjYB6WjrUJWUUQfhf+VYKJKBahVvWkJRyf6nC7CUkmbrfC+VKV3QRjypv+yY5Eh1haGDj6xDM1Mw+dtI4878nA==
+"@ungap/template-literal@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@ungap/template-literal/-/template-literal-0.4.1.tgz#f4bbf86591d63d4bdf0a82158cc9506111dbc7d6"
+  integrity sha512-+hoSovATXOiz+KaKP8qHSl1/4Pgvne1/1CjD17GeQv8AAIMU2JFTPidqYFowrpAFPvuzuSn3fUVQygePVNp/WQ==
   dependencies:
     "@ungap/weakmap" "^0.1.4"
 
-"@ungap/template-tag-arguments@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@ungap/template-tag-arguments/-/template-tag-arguments-0.3.0.tgz#209c4963682e58bfea428432b7dbf7d36e432261"
-  integrity sha512-yJobqBniOQ50jGUQJHPT/0/ZZ/Ibnj/7e+Abn63aGX7OmRV609gKfQo8Jr20wx5hRrOMHsNxQGE5hhT6E2jhRQ==
+"@ungap/template-tag-arguments@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@ungap/template-tag-arguments/-/template-tag-arguments-0.3.1.tgz#b26917352903c07b2d852c143b67c2116e3cbaef"
+  integrity sha512-UGZGVfvEu1VenIPXQl/0IF/uTBoryMf0WZXWAgMC/HQECiUm0Cmy3DYB1sS3ybQf9XuXrYTUIECD3xTzQ0A9og==
   dependencies:
-    "@ungap/template-literal" "^0.4.0"
+    "@ungap/template-literal" "^0.4.1"
 
 "@ungap/trim@^0.1.1":
   version "0.1.1"
@@ -762,32 +762,32 @@ domconstants@^0.1.1:
   resolved "https://registry.yarnpkg.com/domconstants/-/domconstants-0.1.1.tgz#1675bdd1e8315d62a3c98e9a611fa19584310759"
   integrity sha512-Pk4K6tLOzSh0cZDuh7TQivZtYLC6Z8dNissoDyy2tQoVNg8ewScxG3AVJO76kLcTta/u7bgEO6xbIR97MiInfA==
 
-domdiff@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/domdiff/-/domdiff-2.0.5.tgz#0edb0df773b31b77462d8a2e4dd9c65d0987c87f"
-  integrity sha512-6ww2+Th/uI2O7gQJeZixJeYvBwqpPJuP0wNcVoY//4YyqdJAYaABPU9LrM7rZqDqEajJ2fP41pMdJ6gBK0aFeA==
+domdiff@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/domdiff/-/domdiff-2.2.2.tgz#b05ea5e6084b5e659369d1c022e4e3d6fb31398d"
+  integrity sha512-Pv7aH5JfjNIkLRKkah+T3Kd41Gy+7GU+5dmPsOZZXsCJ34QR1i7CCiWraUn1c/a40htShxAQ8mHJR2OqPd12+Q==
   dependencies:
-    "@ungap/essential-map" "^0.1.7"
+    uarray "^1.0.0"
 
-domsanitizer@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/domsanitizer/-/domsanitizer-0.2.0.tgz#a0f91df923ed68c95da1f73c9991abfccc7f3859"
-  integrity sha512-karqLj2RFQE+76vF4qTnPCfRim+QboJcxwM0v459Vr2NkiIBik/msR5tTq1yKviUePBz4J7VHK1Io3j6wSsq9Q==
+domsanitizer@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/domsanitizer/-/domsanitizer-0.2.2.tgz#472b67e039058446c3085a8b897fc55f00040a45"
+  integrity sha512-2nqCaLWi+tpT7oOa862BVrG7bHzYlWFZ5ltmvt4LXECxe5FnwF/zKGs/gWanZWGmv1pwdUTkO9TamoZMqI0Pmg==
   dependencies:
     domconstants "^0.1.1"
 
-domtagger@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/domtagger/-/domtagger-0.4.0.tgz#c88c1da499dceb90bca7314650c74196dfbbab63"
-  integrity sha512-9R0jbiIn6Pyr+0X+RgPrGBOdJTnIsM/arX7jCOAKyFu/FugwtKjg/gyI898uLnLELphEOk/nWyf+nGIPLLMxwQ==
+domtagger@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/domtagger/-/domtagger-0.6.2.tgz#7d4ee19e0391371e43b42411d21145280b443861"
+  integrity sha512-2z7re+gh8Gv6AUuoAhWsF8JXJtNaQCyplYt4p9piSZQ/ivDJ+goDXmKGqKWbc4BniZTD3X/kxm8DEjS12MhPAw==
   dependencies:
     "@ungap/create-content" "^0.1.4"
-    "@ungap/essential-map" "^0.1.7"
     "@ungap/import-node" "^0.1.0"
     "@ungap/trim" "^0.1.1"
     "@ungap/weakmap" "^0.1.4"
     domconstants "^0.1.1"
-    domsanitizer "^0.2.0"
+    domsanitizer "^0.2.2"
+    umap "^1.0.2"
 
 dot-prop@^4.1.0:
   version "4.2.0"
@@ -1214,23 +1214,22 @@ hyperhtml-wire@^2.1.0:
   integrity sha512-LqFs/MgvxyMVM8O3Fx7QcCDWWkga3JeMA7C1inHM71PIchupSyj2u/zG8Blw+KfJHIFmEsx09KxOrgykGqoopQ==
 
 hyperhtml@^2.29.4:
-  version "2.29.4"
-  resolved "https://registry.yarnpkg.com/hyperhtml/-/hyperhtml-2.29.4.tgz#c8e348f1d5dec70152c7c0cc0cb7a7a33b807fc3"
-  integrity sha512-MCs5nYMBaTx/Bla/AuuYgzEgD66mIrQq1NC3sESXbOIm8zql2iWNfKOL8ffkPpvBYGuTw2F/fycMoiKvgjfvcg==
+  version "2.32.2"
+  resolved "https://registry.yarnpkg.com/hyperhtml/-/hyperhtml-2.32.2.tgz#d65e13651ea45ba2ddea79b4058ad405ad960a19"
+  integrity sha512-F4r0MtZn2aQtUUafe009kQPfNoW7cZvK/r3XrDjW5WiybWMCWGRv1WqCYdbMxChLhgNcdklQh3aMl0gbERlOnQ==
   dependencies:
     "@ungap/create-content" "^0.1.4"
     "@ungap/custom-event" "^0.2.0"
-    "@ungap/essential-map" "^0.1.7"
+    "@ungap/essential-map" "^0.2.0"
     "@ungap/essential-weakset" "^0.1.2"
     "@ungap/is-array" "^0.1.1"
-    "@ungap/template-tag-arguments" "^0.3.0"
+    "@ungap/template-tag-arguments" "^0.3.1"
     "@ungap/weakmap" "^0.1.4"
     disconnected "^0.2.1"
-    domdiff "^2.0.5"
-    domtagger "^0.4.0"
+    domdiff "^2.2.2"
+    domtagger "^0.6.2"
     hyperhtml-style "^0.1.2"
     hyperhtml-wire "^2.1.0"
-    lightercollective "^0.3.0"
 
 iconv-lite@^0.4.4:
   version "0.4.24"
@@ -1587,11 +1586,6 @@ lcid@^1.0.0:
   integrity sha1-MIrMr6C8SDo4Z7S28rlQYlHRuDU=
   dependencies:
     invert-kv "^1.0.0"
-
-lightercollective@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/lightercollective/-/lightercollective-0.3.0.tgz#1f07638642ec645d70bdb69ab2777676f35a28f0"
-  integrity sha512-RFOLSUVvwdK3xA0P8o6G7QGXLIyy1L2qv5caEI7zXN5ciaEjbAriRF182kbsoJ1S1TgvpyGcN485fMky6qxOPw==
 
 load-json-file@^4.0.0:
   version "4.0.0"
@@ -2879,6 +2873,16 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
+
+uarray@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/uarray/-/uarray-1.0.0.tgz#e89bf0ea2129596f4bf653b66e53246ed6562b6c"
+  integrity sha512-LHmiAd5QuAv7pU2vbh+Zq9YOnqVK0H764p2Ozinpfy9ka58OID4IsGLiXsitqH7n0NAIDxvax1A/kDXpii/Ckg==
+
+umap@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/umap/-/umap-1.0.2.tgz#2d7d4b145ad8c9f957921460798f3e221347c981"
+  integrity sha512-bW127HgG4H4VAD6qlqO5vCC+7bnlYvZ6A6BdwyGblkWvlEG7VYpj1bcpf3iJpvyKmkPZWDIeZDmoULz67ec7NA==
 
 union-value@^1.0.0:
   version "1.0.0"
