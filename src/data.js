@@ -19,14 +19,24 @@ function getDuration(start) {
 
 const experience = [
   {
-    "position":"Head of Front-end and UX",
-    "company":"GlobalAVL",
+    "position":"Senior Software Developer",
+    "company":"NearForm",
     "period":{
-      "start":"May 2018",
+      "start":"December 2021",
       "end":"Present",
       get duration() {
         return getDuration(this.start);
       },
+      "location":"Remote"
+    },
+    "description": "Building enduring impact for NearForm customers. Define, design, architect and engineer of digital products."
+  },
+  {
+    "position":"Head of Front-end and UX",
+    "company":"GlobalAVL",
+    "period":{
+      "start":"May 2018",
+      "end":"November 2021",
       "location":"Madrid"
     },
     "description":"Leading the UI effort on building the next generation <strong>real-time fleet management software</strong> using <strong>React</strong>, <strong>GraphQL</strong>, <strong>Node.js</strong>, Geographic Information Systems, and more related exciting technologies such as RabbitMQ, Thrift, RTDB, Elastic Search, etc."
@@ -144,7 +154,7 @@ const experience = [
 ];
 
 const data = {
-  header: `<p>Spaghetti code hater, lasagna eater, <i>rock and roll</i> driven <strong>web developer</strong>. Born and raised in <i>Sardinia</i>.</p>`,
+  header: `<p>Spaghetti code hater, lasagna eater, <i>rock and roll</i> driven <strong>web developer</strong>. Born and raised in Sardinia (Italy), living in Madrid (Spain).</p>`,
   experience,
   skillsetURL: 'https://gist.githubusercontent.com/nuragic/7bece2b662a7d98f6b15e3b36143f811/raw',
   languages: [
