@@ -29,7 +29,7 @@ const experience = [
       },
       "location":"Remote"
     },
-    "description": "Building enduring impact for NearForm customers. Define, design, architect and engineer of digital products. Full-stack JavaScript with <strong>React</strong> and <strong>Node.js</strong>."
+    "description": "Building enduring impact for NearForm customers. Definition, design, architecture and engineering of digital products. Full-stack JavaScript and <strong>TypeScript</strong> with <strong>React</strong> and <strong>Node.js</strong>."
   },
   {
     "position":"Head of Front-end and UX",
